@@ -209,6 +209,10 @@ body {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+a:link    { color: inherit;}
+a:visited { color: inherit;}
+a:active  { color: inherit;}
+
 .cv-head-rights {
     
     word-wrap: break-word;
