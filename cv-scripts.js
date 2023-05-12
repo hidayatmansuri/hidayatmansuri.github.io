@@ -238,3 +238,40 @@ function toggleProject() {
         }
     }
 }
+
+
+// Copy Email Address to Clipboard button
+let email = document.getElementById('cvEmailCopy').innerHTML;
+    const copyEmail = async () => {
+    try {
+        await navigator.clipboard.writeText(email);
+        console.log('Content copied to clipboard');
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
+
+
+// Copy Phone Number to Clipboard button
+let phone = document.getElementById('cvPhoneCopy').innerHTML;
+    const copyPhone = async () => {
+    try {
+        await navigator.clipboard.writeText(phone);
+        console.log('Content copied to clipboard');
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
+
+
+// Open default email client with pre-filled email address
+document.querySelector('a[href^="mailto:"]').addEventListener('click', function(event) {
+    event.preventDefault();
+    var emailLink = event.target.href;
+    var email = emailLink.substring(emailLink.indexOf(':') + 1);
+    openEmailClient(email);
+});
+
+function openEmailClient(email) {
+    window.location.href = 'mailto:' + email;
+}

@@ -209,6 +209,7 @@ body {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+a         {text-decoration: none;}
 a:link    { color: inherit;}
 a:visited { color: inherit;}
 a:active  { color: inherit;}
@@ -743,7 +744,18 @@ span {
     text-overflow: inherit;
     /* font-size: 2em; */
     padding: 0.3em 0 1em 0;
+    text-decoration: none;
 }
+
+.fa-copy {
+    margin: 0 0.5em;
+}
+
+#cvEmailCopy:hover     {cursor: pointer; color: var(--cv-teal-color); text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);}
+.fa-copy:hover   {cursor: pointer; color: var(--cv-teal-color); text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);}
+.fa-copy:link    { color: inherit;}
+.fa-copy:visited { color: inherit;}
+.fa-copy:active  { color: inherit;}
 
 
 /* For screen sizes up to 767px */

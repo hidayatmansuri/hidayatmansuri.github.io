@@ -335,7 +335,15 @@
             <div class="cv-modal-contact">
                 <div class="close-modal-contact">X</div>
                 <div class="contact-display-area">
-                    You can either drop me an email at <span class="contact-text">hidayat.mansuri@gmail.com</span> or call me on <span class="contact-text">07854536271</span>
+                    You can either drop me an email at 
+                    <div class="contact-text">
+                        <span id="cvEmailCopy"><a href="mailto:hidayat.mansuri@gmail.com">hidayat.mansuri@gmail.com</a></span>
+                        <i class="fa-regular fa-copy" onclick="copyEmail()"></i>
+                    </div> 
+                    or call me on 
+                    <div class="contact-text">
+                        <span id="cvPhoneCopy">07854536271</span>
+                        <i class="fa-regular fa-copy" onclick="copyPhone()"></i>
                     </div>
                 </div>
             </div>
