@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HidayatMansuri</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="cv-style.css">
+        <script src="https://kit.fontawesome.com/8461ef5dbf.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Dark / Light Mode -->
+        <div class="dark-mode"></div>
+        <input class="mode-input" type="checkbox" id="cvModeToggle"/> <!-- CheckBox -->
+        <label class="mode-label" for="cvModeToggle"></label> 
+        
+        <!-- Name / Logo -->
+        <div class="cv-head-name">
+            Hidayat Mansuri
+        </div>
+
+        <div class="cv-menu">
+            <div class="cv-about-me">I am a full-stack Python developer with experties in both front-end and back-end development. I have knowledge of web development technologies such as HTML, CSS, and JavaScript for the front-end, as well as Flask & Django for the back-end, and databases such as MySQL, MongoDB & PostgreSQL. I am also familiar with web services, APIs, version control systems like Git, and cloud-based platforms such as AWS.</div> 
+            <div class="cv-line cv-line-small"></div>
+            <div class="cv-contact-card">
+                <div class="cv-contact-me">
+                    <!-- <div class="cv-contact">Contact</div> -->
+                    <span class="cv-small-screen">Click here for</span>
+                    <div class="cv-about-open button">More</div>
+                    <div class="cv-small-screen">or</div> 
+                    <div class="cv-contact-open button">Contact</div>
+                    <span class="cv-small-screen">detail</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-about-overlay">
+            <div id="cvModal" class="cv-modal-about">
+                <div class="close-modal-about">X</div>
+                <div class="modal-spacing"></div>
+                <div class="cv-skill-head">Skill & Progress Meter</div>
+                <div class="cv-skill">
+                    <div class="cv-skill-section">
+                        <div class="cv-skill-content">
+                            <div class="cv-skill-percent" data-text="HTML" style="--num: 93">
+                                <div class="cv-skill-dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="cv-skill-number">
+                                <div>93<span>%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-skill-section">
+                        <div class="cv-skill-content">
+                            <div class="cv-skill-percent" data-text="CSS" style="--num: 87">
+                                <div class="cv-skill-dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="cv-skill-number">
+                                <div>87<span>%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-skill-section">
+                        <div class="cv-skill-content">
+                            <div class="cv-skill-percent" data-text="JS" style="--num: 78">
+                                <div class="cv-skill-dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="cv-skill-number">
+                                <div>78<span>%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-skill-section">
+                        <div class="cv-skill-content">
+                            <div class="cv-skill-percent" data-text="Python" style="--num: 72">
+                                <div class="cv-skill-dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="cv-skill-number">
+                                <div>72<span>%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-skill-section">
+                        <div class="cv-skill-content">
+                            <div class="cv-skill-percent" data-text="DB" style="--num: 68">
+                                <div class="cv-skill-dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="cv-skill-number">
+                                <div>68<span>%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-skill-section">
+                        <div class="cv-skill-content">
+                            <div class="cv-skill-percent" data-text="Frame-W" style="--num: 88">
+                                <div class="cv-skill-dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                            </div>
+                            <div class="cv-skill-number">
+                                <div>88<span>%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-about-qualification">
+                    <div class="cv-qualification-header" onclick="toggleQualification()">
+                        <div class="cv-qualification-title">Qualification</div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="cv-qualification-content">
+                        <div class="cv-course-shadow">
+                            <div class="cv-course-year">Nov</div>
+                            <div class="cv-course-century">
+                                20
+                                <span id="cvCODE" class="cv-or">
+                                    20
+                                </span>
+                            </div>
+                            <div class="cv-course-content">
+                                <div class="cv-course-head">
+                                    <span>Code Institute</span>
+                                    <span>Diploma in Full Stack Web Development</span>
+                                </div>
+                                <div>Python Programming</div>
+                                <ul>
+                                    <li>I have learned range of technologies and tools, including HTML, CSS, JavaScript, Python, Flask, Django, MongoDB, and more</li>
+                                    <li>Have created 3 different projects through course using above tools and techniques</li>
+                                    <li>I have also acquired knowledge related to database, development, deployment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-course-shadow">
+                            <div class="cv-course-year">Oct</div>
+                            <div class="cv-course-century">
+                                20
+                                <span id="cvNCC" class="cv-or">
+                                    06
+                                </span>
+                            </div>
+                            <div>
+                                <div class="cv-course-head">
+                                    <span>NCC Education</span>
+                                    <span>PgD in Strategic Business & Information Technology</span>
+                                </div>
+                                <div>Business Strategy, Project Management, Information Systems Development & Data Analytics</div>
+                                <ul>
+                                    <li>Analyse and solve complex business problems by integrating information technology into business processes</li>
+                                    <li>Professional development and communication skills for leadership roles in business and technology organizations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-course-shadow">
+                            <div class="cv-course-year">Sep</div>
+                            <div class="cv-course-century">
+                                20
+                                <span id="cvCDAC" class="cv-or">
+                                    03
+                                </span>
+                            </div>
+                            <div>
+                                <div class="cv-course-head">
+                                    <span>Centre for Development of Advanced Computing</span>
+                                    <span>PgD in Computer Application</span>
+                                </div>
+                                <div>C, C++, ASP, Visual Basic 6, PL/SQL, Oracle 9i</div>
+                                <ul>
+                                    <li>During this course I have studied foundation in computer applications and programming with an emphasis on practical skills and hands-on experience.</li>
+                                    <li>This course also covered computer architecture, programming languages, database management as well as web development & software engineering</li>
+                                    <li>I have learned to design and develop software applications using a variety of programming languages and tools</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-course-shadow">
+                            <div class="cv-course-year">Apr</div>
+                            <div class="cv-course-century">
+                                20
+                                <span id="cvGU" class="cv-or">
+                                    02
+                                </span>
+                            </div>
+                            <div>
+                                <div class="cv-course-head">
+                                    
+                                    <span>Gujarat University</span>
+                                    <span>Bachelor of Science in Chemistry</span>
+                                </div>
+                                <div>Inorganic, Organic, Physical, Analytical & Biochemistry</div>
+                                <ul>
+                                    <li>I have studied chemical reactions, chemical structures, chemical properties, chemical processes, and chemical analysis</li>
+                                    <li>I have also gained practical skills in laboratory techniques, chemical analysis, and instrumentation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv-about-experience">
+                    <div class="cv-experience-header" onclick="toggleExperience()">
+                        <div class="cv-experience-title">Experience</div>
+                        <i class="fas fa-chevron-down cv-experience-arrow"></i>
+                    </div>
+                    <div class="cv-experience-content">
+                        <div class="cv-work-shadow">
+                            <div class="cv-work-head">
+                                <span>Self - Employee</span>
+                                <span>Jul 20<span class="cv-work-year">18</span> - Present</span>
+                            </div>
+                            <div>Miscellaneous (eCommerce)</div>
+                            <ul>
+                                <li>I have gained experience on how to optimize listing and provide excellent customer service in order to increase sales and revenue</li>
+                                <li>I have gained knowledge how to engage with customers through reviews, feedbacks and rating to provide tailored fit services and offers</li>
+                                <li>From online selling I have learned how to make informed decisions about business strategy for growth and success through available valuable data and analytics.</li>
+                            </ul>
+                        </div>
+                        <div class="cv-work-shadow">
+                            <div class="cv-work-head">
+                                <span>Manager</span>
+                                <span>Aug 20<span class="cv-work-year">08</span> – Jun 20<span class="cv-work-year">18</span></span>
+                            </div>
+                            <div>CANS UK Limited (Retail)</div>
+                            <ul>
+                                <li>I have gained knowledge on how to drive sales and revenue growth by developing and implementing effective sales strategies, training and motivating staff & maintaining positive customer experience</li>
+                                <li>I have also managed to build a loyal customer base by resolving complaints promptly, and maintaining a friendly and welcoming store environment.</li>
+                                <li>I have also achieved knowledge of efficient operations by optimizing inventory management, minimizing waste, reducing operational costs, and streamlining processes to increase profitability for business.</li>
+                            </ul>
+                        </div>
+                        <div class="cv-work-shadow">
+                            <div class="cv-work-head">
+                                <span>Supervisor</span>
+                                <span>Nov 20<span class="cv-work-year">07</span> – Jul 20<span class="cv-work-year">08</span></span>
+                            </div>
+                            <div>Co-op Foods (Retail)</div>
+                            <ul>
+                                <li>Being a Supervisor at Co-Operative Foods I achieve knowledge of effective inventory management, cash handling, stock control, maintain high level of customer satisfaction and welcoming store environment.</li>
+                                <li>I have also gained knowledge of team management through staff training and motivation to help business growth</li>
+                                <li>I have also gained knowledge of merchandising. Promotion and maintain health and safety</li>
+                            </ul>
+                        </div>
+                        <div class="cv-work-shadow">
+                            <div class="cv-work-head">
+                                <span>Administrator</span>
+                                <span>Feb 20<span class="cv-work-year">07</span> - Nov 20<span class="cv-work-year">07</span></span>
+                            </div>
+                            <div>Links Construction LTD (Construction)</div>
+                            <ul>
+                                <li>Working as an Administration at Construction company I have achieve effective project & financial management knowledge</li>
+                                <li>I have also accumulated knowledge regarding maintaining compliance with regulations, managing the workforce effectively and ensuring health & safety at sites.</li>
+                                <li>I have learned how to identify opportunity for growth, development and explore new markets</li>
+                            </ul>
+                        </div>
+                        <div class="cv-work-shadow">
+                            <div class="cv-work-head">
+                                <span>Night Auditor</span>
+                                <span>May 20<span class="cv-work-year">06</span> - Jan 20<span class="cv-work-year">07</span></span>
+                            </div>
+                            <div>Shaftesbury London Hyde Park Hotel (Hospitality)</div>
+                            <ul>
+                                <li>Being a Night Auditor at Shaftesbury London Hyde Park I have become experienced and responsible for accurate financial management coupled with exceptional customer service to all the guests.</li>
+                                <li>I have also expertise myself in hotel operations according to hotel policies and regulations for smooth operation overnight</li>
+                                <li>During this employment I have accumulated safety, security and privacy knowledge regarding hospitality industry</li>
+                            </ul>
+                        </div>
+                        <div class="cv-work-head">
+                            <span>Sales Assistant</span>
+                            <span>Aug 20<span class="cv-work-year">05</span> - Apr 20<span class="cv-work-year">06</span></span>
+                        </div>
+                        <div>Jay's Electrical Wholesaler (Wholesale)</div>
+                        <ul>
+                            <li>This was my first ever job at Electrical Wholesaler in the UK where I have learned basic of customer service for the retail and service industry</li>
+                            <li>Working at Wholesaler was all about stock management which made me efficient in restocking effort and identifying slow moving products.</li>
+                            <li>This job also taught me effective communication with suppliers, placing orders in a timely manner and resolving issues.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-about-qualification">
+                    <div class="cv-qualification-header" onclick="toggleProject()">
+                        <div class="cv-qualification-title">Project</div>
+                        <i class="fas fa-chevron-down cv-project-arrow"></i>
+                    </div>
+                    <div class="cv-project-content">
+                        <!-- <div>Project reference will be provided per request</div> -->
+                        <div class="cv-project-shadow">
+                            <!-- <div class="cv-course-year">Nov</div>
+                            <div class="cv-course-century">
+                                20
+                                <span id="cvCODE" class="cv-or">
+                                    20
+                                </span>
+                            </div> -->
+                            <!-- <div class="cv-course-content"> -->
+                                <!-- <div class="cv-course-head">
+                                    <span>Code Institute</span>
+                                    <span>Diploma in Full Stack Web Development</span>
+                                </div> -->
+                                <div>Project reference will be provided upon request</div>
+                                <!-- <ul>
+                                    <li>I have learned range of technologies and tools, including HTML, CSS, JavaScript, Python, Flask, Django, MongoDB, and more</li>
+                                    <li>Have created 3 different projects through course using above tools and techniques</li>
+                                    <li>I have also acquired knowledge related to database, development, deployment</li>
+                                </ul> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cv-contact-overlay">
+            <div class="cv-modal-contact">
+                <div class="close-modal-contact">X</div>
+                <div class="contact-display-area">
+                    You can either drop me an email at <span class="contact-text">hidayat.mansuri@gmail.com</span> or call me on <span class="contact-text">07854536271</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cv-head-social">
+            <a href="https://twitter.com/HidayatMansuri4" target="_blank"><i class="fa-brands fa-twitter social-icon"></i></a>
+            <a href="https://github.com/hidayatmansuri" target="_blank"><i class="fa-brands fa-github social-icon"></i></a>
+            <a href="https://www.linkedin.com/in/hidayat-mansuri-70003ab3" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
+        </div>
+        <div class="cv-head-rights">
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            <br>
+            <span class="rights-name">
+                Hidayat Mansuri
+            </span>
+            <br>
+            Reserved All Rights
+        </div>
+        <div class="cv-body"></div>
+        <script src="cv-scripts.js"></script>
+    </body>
+</html>
