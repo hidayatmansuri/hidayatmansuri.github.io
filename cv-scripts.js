@@ -241,7 +241,7 @@ function toggleProject() {
 
 
 // Copy Email Address to Clipboard button
-let email = document.getElementById('cvEmailCopy').innerHTML;
+const email = document.getElementById('cvEmailCopy').innerHTML;
     const copyEmail = async () => {
     try {
         await navigator.clipboard.writeText(email);
@@ -253,7 +253,7 @@ let email = document.getElementById('cvEmailCopy').innerHTML;
 
 
 // Copy Phone Number to Clipboard button
-let phone = document.getElementById('cvPhoneCopy').innerHTML;
+const phone = document.getElementById('cvPhoneCopy').innerHTML;
     const copyPhone = async () => {
     try {
         await navigator.clipboard.writeText(phone);

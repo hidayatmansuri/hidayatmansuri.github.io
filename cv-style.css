@@ -501,7 +501,6 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 2em 1em;
-    cursor: pointer;
     font-weight: var(--cv-font-medium);
 }
 
@@ -513,6 +512,7 @@ span {
 .fa-chevron-down {
     font-size: 1.2rem;
     transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .fa-chevron-down.rotate {
@@ -585,7 +585,6 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 2em 1em;
-    cursor: pointer;
     font-weight: var(--cv-font-medium);
 }
 
@@ -597,6 +596,7 @@ span {
 .cv-experience-arrow {
     font-size: 1.2rem;
     transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .cv-experience-arrow.rotate {
@@ -645,6 +645,7 @@ span {
 .cv-project-arrow {
     font-size: 1.2rem;
     transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .cv-project-arrow.rotate {
