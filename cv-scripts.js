@@ -171,7 +171,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
 // Expand and Roll back Qualification card / Turn Chevron accordingly
 function toggleQualification() {
     const qualificationContent = document.querySelector(".cv-qualification-content");
-    const qualificationChevron = document.querySelector(".fa-chevron-down");
+    const qualificationChevron = document.querySelector(".cv-qualification-arrow");
     if (qualificationContent.style.display === "none") {
         qualificationContent.style.display = "block";
         qualificationChevron.classList.add("rotate");

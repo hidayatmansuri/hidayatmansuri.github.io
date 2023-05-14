@@ -38,7 +38,7 @@ body {
     width: 100%;
 }
 
-/* Dark / Light Mode */
+/* ---------------------------------------- Dark / Light Mode */
 
 .dark-mode {
     background-image: linear-gradient(90deg, rgba(67, 66, 66, 1) 50%, rgba(9, 42, 42, 1) 100%);
@@ -92,12 +92,11 @@ body {
     background: linear-gradient(180deg,var(--cv-teal-color),var(--cv-bg-color));
 }
 
-/* Name / Logo */
+/* ---------------------------------------- Name / Logo */
 
 .cv-head-name {
     position: absolute;
     top: 0;
-    /* font-size: calc(25px + 0.4vw); */
     font-size: 2em;
     padding: 10px 0 0 0;
     font-weight: var(--cv-font-bold);
@@ -106,7 +105,7 @@ body {
     margin: 0 0 0 10px;
 }
 
-/* Menu in centre */
+/*  ---------------------------------------- Menu in centre */
 
 .cv-menu {
     position: absolute;
@@ -122,7 +121,7 @@ body {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    z-index: 0;
+    z-index: 1;
     border-radius: 25px;
 }
 
@@ -155,7 +154,6 @@ body {
 .cv-contact-me {
     float: right;
     font-family: Dancing Script;
-    /* font-size: calc(20px + 0.4vw); */
     font-size: 1.5em;
     margin-right: 0;
     text-align: center;
@@ -192,7 +190,6 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     width: 30px;
-    /* font-size: calc(20px + 0.4vw); */
     font-size: 1.5em;
     margin: 0 0 0 10px;
     font-weight: var(--cv-font-medium);
@@ -224,20 +221,18 @@ a:active  { color: inherit;}
 }
 
 .rights-name {
-    /* font-size: calc(15px + 0.4vw); */
     font-size: 1.3em;
     font-weight: var(--cv-font-medium);
 }
 
 .cv-body {
-    /* font-size: 25px; */
     font-size: 1.5em;
     height: 100%;
     padding: 50px 30px 20px 270px;
 }
 
 
-/* Modal About */
+/*  ---------------------------------------- Modal About */
 
 .cv-about-overlay {
     position: fixed;
@@ -250,17 +245,16 @@ a:active  { color: inherit;}
     visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.3s, opacity 0.3s 0s, transform 0.3s;
-    z-index: 1;
+    z-index: 2;
 }
 
 .cv-modal-about {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 85%;
     height: 85%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
     border-radius: 25px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
@@ -271,62 +265,10 @@ a:active  { color: inherit;}
     overflow: auto;
 }
 
-/* .cv-about-scroll {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-} */
-
 .modal-spacing {
     width: 100%;
     margin: 3em 0 0 0;
 }
-
-/* .modal-heading {
-    font-size: calc(15px + 0.4vw);
-    font-weight: var(--cv-font-medium);
-    padding: 0 20px 0 20px;
-} */
-
-/* .intro-text {
-    position: absolute;
-    height: 20px;
-    width: 250px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: calc(20px + 0.4vw);
-    text-align: center;
-    font-weight: var(--cv-font-bold);
-    color: var(--cv-teal-color);
-    padding: 15px 0 0 0;
-    z-index: -1;
-} */
-
-/* .modal-text {
-    padding: 0 20px 0 20px;
-} */
-
-/* .modal-splitter {
-    display: flex;
-    padding: 0 0 20px 0;
-    transition: 0.5s;
-} */
-
-/* .modal-30 {
-    width: 30%;
-    text-align: center;
-    transition: 0.5s;
-} */
-
-/* .modal-70 {
-    width: 70%;
-    transition: 0.5s;
-} */
-
-/* .modal-icon {
-    font-size: calc(160px + 0.4vw);
-    padding-top: 20%;
-} */
 
 .open-cv-modal-about {
     opacity: 5;
@@ -341,12 +283,11 @@ a:active  { color: inherit;}
 .close-modal-about {
     position: sticky;
     align-self: flex-end;
-    /* position: absolute; */
     top: 13px;
     right: 20px;
     font-size: 1.5em;
     font-weight: var(--cv-font-bold);
-    z-index: 2;
+    z-index: 3;
 }
 
 .close-modal-about:hover {
@@ -355,7 +296,7 @@ a:active  { color: inherit;}
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Skill and Knowledge Circle Bar */
+/*  ---------------------------------------- Skill and Knowledge Circle Meter */
 
 .cv-skill-head {
     width: 90%;
@@ -487,7 +428,7 @@ span {
 }
 
 
-/* Expanding Qualification Cards */
+/*  ---------------------------------------- Expanding Qualification Cards */
 
 .cv-about-qualification {
     border-radius: 12px;
@@ -500,13 +441,22 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 1em;
+    padding: 1em 1em;
     font-weight: var(--cv-font-medium);
 }
 
 .cv-qualification-title {
     font-size: 1.2em;
     margin: 0;
+}
+
+.cv-qualification-arrow {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0.7em;
+    font-size: 1.2rem;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .fa-chevron-down {
@@ -534,7 +484,6 @@ span {
 .cv-or {
     height: 1.5em;
     width: 1.5em;
-    /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); */
     border-radius: 50%;
     font-size: 2em;
     font-weight: var(--cv-font-medium);
@@ -563,6 +512,10 @@ span {
     font-weight: var(--cv-font-medium);
 }
 
+.cv-institute-name {
+    margin: 0 0.5em 0 0;
+}
+
 .cv-course-shadow {
     box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2);
     padding: 0.5em;
@@ -571,7 +524,7 @@ span {
 }
 
 
-/* Expanding Experience Cards */
+/*  ---------------------------------------- Expanding Experience Cards */
 
 .cv-about-experience {
     border-radius: 12px;
@@ -584,7 +537,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 1em;
+    padding: 1em 1em;
     font-weight: var(--cv-font-medium);
 }
 
@@ -594,6 +547,9 @@ span {
 }
 
 .cv-experience-arrow {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0.7em;
     font-size: 1.2rem;
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
@@ -621,7 +577,6 @@ span {
 .cv-work-year {
     height: 1.5em;
     width: 1.5em;
-    /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); */
     border-radius: 50%;
     border: 1px solid;
     font-size: 1.5em;
@@ -640,9 +595,12 @@ span {
 }
 
 
-/* Expanding Experience Cards */
+/*  ---------------------------------------- Expanding Experience Cards */
 
 .cv-project-arrow {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 0.7em;
     font-size: 1.2rem;
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
@@ -664,7 +622,7 @@ span {
     padding: 1em;
 }
 
-/* Modal Contact */
+/*  ---------------------------------------- Modal Contact */
 
 .cv-contact-overlay {
     position: fixed;
@@ -677,12 +635,12 @@ span {
     visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.3s, opacity 0.3s 0s, transform 0.3s;
-    z-index: 1;
+    z-index: 2;
 }
 
 .cv-modal-contact {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 50%;
     height: 50%;
     border-radius: 25px;
@@ -722,7 +680,7 @@ span {
     right: 20px;
     font-size: 1.5em;
     font-weight: var(--cv-font-bold);
-    z-index: 2;
+    z-index: 3;
 }
 
 .close-modal-contact:hover {
@@ -743,7 +701,6 @@ span {
 .contact-text {
     font-family: Ubuntu;
     text-overflow: inherit;
-    /* font-size: 2em; */
     padding: 0.3em 0 1em 0;
     text-decoration: none;
 }
@@ -759,7 +716,7 @@ span {
 .fa-copy:active  { color: inherit;}
 
 
-/* For screen sizes up to 767px */
+/*  ---------------------------------------- For screen sizes up to 959px */
 
 @media screen and (max-width: 959px) {
 
@@ -818,25 +775,6 @@ span {
         display: none;
     }
 
-    /* .contact-display-area {
-        position: relative;
-        display: block;
-    } */
-
-    /* .modal-splitter {
-        display: inline;
-        transition: 0.5s;
-    } */
-
-    /* .modal-full {
-        width: 100%;
-        transition: 0.5s;
-    } */
-
-    /* .modal-icon {
-        padding: 0;
-    } */
-
     .cv-line {
         width: 80%;
         height: 0;
@@ -852,59 +790,10 @@ p {
     line-height: 1.5;
 }
 
-
-
-/* .modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.3s, opacity 0.3s 0s, transform 0.3s;
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 1rem 1.5rem;
-    width: 24rem;
-    border-radius: 0.5rem;
-}
-
-.close-button {
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
-}
-
-.close-button:hover {
-    background-color: darkgray;
-}
-
-.show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0.3s, opacity 0.3s 0s, transform 0.3s;
-} */
-
-/* Scroll Bar */
+/*  ---------------------------------------- Scroll Bar */
 
 /* Change the scrollbar width and height */
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
-
-/* Test */
