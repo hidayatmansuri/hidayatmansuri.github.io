@@ -50,12 +50,25 @@ body {
     display: none;
 }
 
+.cv-mode-text {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
 .mode-label {
     width: 22px;
     height: 22px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    /* top: 10px; */
+    right: 25px;
     background: var(--cv-font-color);
     border-radius: 20px;
     box-shadow: inset 0px 2px 10px rgba(0,0,0,0.4), inset 0px -2px 10px rgba(255,255,255,0.4);
@@ -72,7 +85,7 @@ body {
     background: linear-gradient(180deg,var(--cv-teal-color),var(--cv-font-color));
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-    transition: 0.5s    
+    transition: 0.5s;
 }
 
 .mode-input {
@@ -109,13 +122,15 @@ body {
 
 .cv-menu {
     position: absolute;
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex; /* sets the container to use flexbox */
-    justify-content: center; /* aligns the boxes horizontally in the center */
+    flex-direction: column;
+    /* aligns the boxes horizontally in the center */
+    /* justify-content: center;  */
     align-items: center; /* aligns the boxes vertically in the center */
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
@@ -123,22 +138,28 @@ body {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     z-index: 1;
     border-radius: 25px;
+    /* overflow: auto; */
 }
 
 .cv-about-me {
+    width: 80%;
     font-size: 1.5em;
-    text-align: justify;
-    font-weight: var(--cv-font-slim);
-    padding: 0 10px 0 20px;
-    box-sizing: border-box;
+    text-align: center;
+    font-weight: var(--cv-font-bold);
+    padding: 2em 0 0 0;
 }
 
 .cv-line {
-    height: 80%;
-    border-left: 1.5px solid;
-    margin: 0 10px;
-    transition: 0.5s;
-    z-index: -1;
+    width: 80%;
+    height: 0;
+    border-top: 1.5px solid;
+    margin: 10px 0;
+    transition: 0.5s
+}
+
+.cv-scroll {
+    width: 90%;
+    overflow: auto;
 }
 
 .cv-contact-card {
@@ -161,6 +182,54 @@ body {
     padding: 0 10px;
 }
 
+.cv-contact-button {
+    position: absolute;
+    top: -1em;
+    right: 2em;
+    background-color: var(--cv-swamp-color);
+    border: 1px solid var(--cv-bg-color);
+    width: 2em;
+    height: 2em;
+    color: var(--cv-bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: var(--cv-font-bold);
+    cursor: pointer;
+    font-family: ubuntu;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.cv-contact-button:hover {
+    cursor: pointer;
+    background-color: var(--cv-bg-color);
+    color: var(--cv-swamp-color);
+    border: 1px solid;
+    font-weight: var(--cv-font-bold);
+}
+
+.cv-download-button {
+    position: absolute;
+    top: -1em;
+    right: 5em;
+    background-color: var(--cv-swamp-color);
+    border: 1px solid var(--cv-bg-color);
+    width: 2em;
+    height: 2em;
+    color: var(--cv-bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: var(--cv-font-bold);
+    cursor: pointer;
+    font-family: ubuntu;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
 .button {
     background-color: var(--cv-swamp-color);
     border: 1px solid var(--cv-swamp-color);
@@ -178,9 +247,10 @@ body {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
 }
 
-.button:hover {
+.cv-download-button:hover {
     cursor: pointer;
-    background-color: transparent;
+    background-color: var(--cv-bg-color);
+    color: var(--cv-swamp-color);
     border: 1px solid;
     font-weight: var(--cv-font-bold);
 }
@@ -263,6 +333,7 @@ a:active  { color: inherit;}
     transform: translate(-50%, -50%);
     background: var(--cv-bg-color);
     overflow: auto;
+    /* overflow: -moz-hidden-unscrollable; */
 }
 
 .modal-spacing {
@@ -299,9 +370,13 @@ a:active  { color: inherit;}
 /*  ---------------------------------------- Skill and Knowledge Circle Meter */
 
 .cv-skill-head {
-    width: 90%;
-    font-weight: var(--cv-font-medium);
+    width: 100%;
+    font-weight: var(--cv-font-regular);
     font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    /* position: sticky; */
+    margin: 0 1em;
 }
 
 .cv-skill {
@@ -432,12 +507,13 @@ span {
 
 .cv-about-qualification {
     border-radius: 12px;
-    width: 90%;
+    /* width: 100%; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     margin: 1em;
 }
 
 .cv-qualification-header {
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -528,7 +604,7 @@ span {
 
 .cv-about-experience {
     border-radius: 12px;
-    width: 90%;
+    /* width: 100%; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     margin: 1em;
 }
@@ -563,7 +639,7 @@ span {
     display: none;
     padding: 0 1em;
     transition: transform 2s;
-    margin: 1em 3em 3em 3em;
+    /* margin: 1em 3em 3em 3em; */
 }
 
 .cv-work-head {
@@ -720,18 +796,23 @@ span {
 
 @media screen and (max-width: 959px) {
 
-    .cv-menu {
+    /* .cv-menu {
         width: 80%;
         height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
+    } */
 
-    .cv-about-me {
+    /* .cv-about-me {
         text-align: justify;
         padding: 20px;
+    } */
+
+    .cv-scroll {
+        width: 100%;
+        overflow: auto;
     }
 
     .cv-qualification-content {
@@ -794,6 +875,9 @@ p {
 
 /* Change the scrollbar width and height */
 ::-webkit-scrollbar {
+    scrollbar-width: 0;
+    scrollbar-color: none;
+    /* overflow: -moz-hidden-unscrollable; */
     width: 0;
     height: 0;
 }

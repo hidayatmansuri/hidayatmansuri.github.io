@@ -1,14 +1,14 @@
 // Opening a About Modal
-const aboutModal = document.querySelector(".cv-about-overlay");
-const openAbout = document.querySelector(".cv-about-open");
-const closeAbout = document.querySelector(".close-modal-about");
+// const aboutModal = document.querySelector(".cv-about-overlay");
+// const openAbout = document.querySelector(".cv-about-open");
+// const closeAbout = document.querySelector(".close-modal-about");
 
-function toggleAboutModal() {
-    aboutModal.classList.toggle("open-cv-modal-about");
-}
+// function toggleAboutModal() {
+//     aboutModal.classList.toggle("open-cv-modal-about");
+// }
 
-openAbout.addEventListener("click", toggleAboutModal);
-closeAbout.addEventListener("click", toggleAboutModal);
+// openAbout.addEventListener("click", toggleAboutModal);
+// closeAbout.addEventListener("click", toggleAboutModal);
 
 
 // Opening a Contact Modal
@@ -43,8 +43,8 @@ cvCheckboxMode.addEventListener("change", function() {
         cvCDACBackground.style.color = "var(--cv-font-color)";
         cvGUBackground.style.backgroundColor = "var(--cv-bg-color)";
         cvGUBackground.style.color = "var(--cv-font-color)";
-        cvModalColor.style.backgroundColor = "var(--cv-font-color)";
-        cvModalColor.style.color = "var(--cv-bg-color)";
+        // cvModalColor.style.backgroundColor = "var(--cv-font-color)";
+        // cvModalColor.style.color = "var(--cv-bg-color)";
         cvContactModalColor.style.backgroundColor = "var(--cv-font-color)";
         cvContactModalColor.style.color = "var(--cv-bg-color)";
     }
@@ -58,8 +58,8 @@ cvCheckboxMode.addEventListener("change", function() {
         cvCDACBackground.style.color = "";
         cvGUBackground.style.backgroundColor = "";
         cvGUBackground.style.color = "";
-        cvModalColor.style.backgroundColor = "";
-        cvModalColor.style.color = "";
+        // cvModalColor.style.backgroundColor = "";
+        // cvModalColor.style.color = "";
         cvContactModalColor.style.backgroundColor = "";
         cvContactModalColor.style.color = "";
     }
@@ -84,8 +84,8 @@ function cvToggleMode() {
         cvCDACBackground.style.color = "var(--cv-font-color)";
         cvGUBackground.style.backgroundColor = "var(--cv-bg-color)";
         cvGUBackground.style.color = "var(--cv-font-color)";
-        cvModalColor.style.backgroundColor = "var(--cv-font-color)";
-        cvModalColor.style.color = "var(--cv-bg-color)";
+        // cvModalColor.style.backgroundColor = "var(--cv-font-color)";
+        // cvModalColor.style.color = "var(--cv-bg-color)";
         cvContactModalColor.style.backgroundColor = "var(--cv-font-color)";
         cvContactModalColor.style.color = "var(--cv-bg-color)";
     }
@@ -99,8 +99,8 @@ function cvToggleMode() {
         cvCDACBackground.style.color = "";
         cvGUBackground.style.backgroundColor = "";
         cvGUBackground.style.color = "";
-        cvModalColor.style.backgroundColor = "";
-        cvModalColor.style.color = "";
+        // cvModalColor.style.backgroundColor = "";
+        // cvModalColor.style.color = "";
         cvContactModalColor.style.backgroundColor = "";
         cvContactModalColor.style.color = "";
     }
@@ -120,8 +120,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     cvCDACBackground.style.color = "var(--cv-font-color)";
     cvGUBackground.style.backgroundColor = "var(--cv-bg-color)";
     cvGUBackground.style.color = "var(--cv-font-color)";
-    cvModalColor.style.backgroundColor = "var(--cv-font-color)";
-    cvModalColor.style.color = "var(--cv-bg-color)";
+    // cvModalColor.style.backgroundColor = "var(--cv-font-color)";
+    // cvModalColor.style.color = "var(--cv-bg-color)";
     cvContactModalColor.style.backgroundColor = "var(--cv-font-color)";
     cvContactModalColor.style.color = "var(--cv-bg-color)";
 } else {
@@ -157,8 +157,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
         cvCDACBackground.style.color = "var(--cv-font-color)";
         cvGUBackground.style.backgroundColor = "var(--cv-bg-color)";
         cvGUBackground.style.color = "var(--cv-font-color)";
-        cvModalColor.style.backgroundColor = "var(--cv-font-color)";
-        cvModalColor.style.color = "var(--cv-bg-color)";
+        // cvModalColor.style.backgroundColor = "var(--cv-font-color)";
+        // cvModalColor.style.color = "var(--cv-bg-color)";
         cvContactModalColor.style.backgroundColor = "var(--cv-font-color)";
         cvContactModalColor.style.color = "var(--cv-bg-color)";
     } else {
