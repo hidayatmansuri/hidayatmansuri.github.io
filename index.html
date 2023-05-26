@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Hidayat Mansuri</title>
+        <title>Resume - Hidayat </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="cv-style.css">
@@ -29,25 +29,37 @@
         </div>
 
         <div class="cv-menu">
+            <!-- A Circle containing download elements with CV download link -->
             <div class="cv-download-button"><a href="documents/CV_Hidayat.pdf" target="_blank" download><i class="fa-solid fa-file-arrow-down"></i></a></div>
+            <!-- A circle containing phone symbol -->
             <div class="cv-contact-open cv-contact-button"><i class="fa-solid fa-phone"></i></div>
             <div class="cv-about-me">FULL-STACK PYTHON DEVELOPER</div>
             <div class="cv-line cv-line-small"></div>
-            <div class="cv-scroll">
-                <div class="cv-about-qualification">
-                    <div class="cv-qualification-header" onclick="toggleQualification()">
-                        <div class="cv-qualification-title">Qualification</div>
+            
+            <div class="cv-scroll"> <!-- DIV containing all scrollable text and expandable card -->
+                
+                <div class="cv-about-qualification"> <!-- A expandable card with all the qualification detail  -->
+                    
+                    <div class="cv-qualification-header" onclick="toggleQualification()"> <!-- toggle expandale card function at 172 in cv-script.js -->
+                        
+                        <div class="cv-qualification-title">Qualification</div> <!-- Expandable card Header -->
                         <i class="fas fa-chevron-down cv-qualification-arrow"></i>
                     </div>
-                    <div class="cv-qualification-content" style="display: none;">
-                        <div class="cv-course-shadow">
+                    
+                    <div class="cv-qualification-content" style="display: none;"> <!-- Expandable card content for Qualification with prefilled display property -->
+                        
+                        <div class="cv-course-shadow"> <!-- Shadow to seperate 2 qualification -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the invert colour circle -->
                             <div class="cv-course-year">Nov</div>
                             <div class="cv-course-century">
                                 20
-                                <span id="cvCODE" class="cv-or">
+                                <span id="cvCODE" class="cv-invert-circle">
                                     20
                                 </span>
                             </div>
+
+                            <!-- Area combined of 3 rows which contains Name of the Institute, course and course content -->
                             <div class="cv-course-content">
                                 <div class="cv-course-head">
                                     <span class="cv-institute-name">Code Institute</span>
@@ -61,14 +73,19 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="cv-course-shadow">
+                        
+                        <div class="cv-course-shadow"> <!-- Shadow to seperate 2 qualification -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the invert colour circle -->
                             <div class="cv-course-year">Oct</div>
                             <div class="cv-course-century">
                                 20
-                                <span id="cvNCC" class="cv-or">
+                                <span id="cvNCC" class="cv-invert-circle">
                                     06
                                 </span>
                             </div>
+
+                            <!-- Area combined of 3 rows which contains Name of the Institute, course and course content -->
                             <div>
                                 <div class="cv-course-head">
                                     <span class="cv-institute-name">NCC Education</span>
@@ -81,14 +98,19 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="cv-course-shadow">
+
+                        <div class="cv-course-shadow"> <!-- Shadow to seperate 2 qualification -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the invert colour circle -->
                             <div class="cv-course-year">Sep</div>
                             <div class="cv-course-century">
                                 20
-                                <span id="cvCDAC" class="cv-or">
+                                <span id="cvCDAC" class="cv-invert-circle">
                                     03
                                 </span>
                             </div>
+
+                            <!-- Area combined of 3 rows which contains Name of the Institute, course and course content -->
                             <div>
                                 <div class="cv-course-head">
                                     <span class="cv-institute-name">Centre for Development of Advanced Computing</span>
@@ -102,14 +124,19 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="cv-course-shadow">
+
+                        <div class="cv-course-shadow"> <!-- Shadow to seperate 2 qualification -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the invert colour circle -->
                             <div class="cv-course-year">Apr</div>
                             <div class="cv-course-century">
                                 20
-                                <span id="cvGU" class="cv-or">
+                                <span id="cvGU" class="cv-invert-circle">
                                     02
                                 </span>
                             </div>
+
+                            <!-- Area combined of 3 rows which contains Name of the Institute, course and course content -->
                             <div>
                                 <div class="cv-course-head">
                                     
@@ -125,17 +152,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="cv-about-experience">
-                    <div class="cv-experience-header" onclick="toggleExperience()">
-                        <div class="cv-experience-title">Experience</div>
+
+                <div class="cv-about-experience"> <!-- A expandable card with all the experience detail  -->
+                    
+                    <div class="cv-experience-header" onclick="toggleExperience()"> <!-- toggle expandale card function at 196 in cv-script.js -->
+                    
+                        <div class="cv-experience-title">Experience</div><!-- Expandable card Header -->
                         <i class="fas fa-chevron-down cv-experience-arrow"></i>
                     </div>
-                    <div class="cv-experience-content" style="display: none;">
-                        <div class="cv-work-shadow">
+
+                    <div class="cv-experience-content" style="display: none;"> <!-- Expandable card content for Qualification with prefilled display property -->
+
+                        <div class="cv-work-shadow"> <!-- Shadow to seperate 2 experience -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the circle -->
                             <div class="cv-work-head">
                                 <span>Self - Employee</span>
                                 <span>Jul 20<span class="cv-work-year">18</span> - Present</span>
                             </div>
+                            
+                            <!-- Area combined of 2 rows which contains Name of the Employer and expertise -->
                             <div>Miscellaneous (eCommerce)</div>
                             <ul>
                                 <li>Through my experience, developed a keen understanding of how to optimize product listings and provide exceptional customer service, ultimately resulting in increased sales and revenue.</li>
@@ -143,11 +179,15 @@
                                 <li>Through my experience in online selling, gained valuable insights on how to make informed decisions about business strategy for growth and success by leveraging available data and analytics.</li>
                             </ul>
                         </div>
-                        <div class="cv-work-shadow">
+                        <div class="cv-work-shadow"> <!-- Shadow to seperate 2 experience -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the circle -->
                             <div class="cv-work-head">
                                 <span>Manager</span>
                                 <span>Aug 20<span class="cv-work-year">08</span> – Jun 20<span class="cv-work-year">18</span></span>
                             </div>
+
+                            <!-- Area combined of 2 rows which contains Name of the Employer and expertise -->
                             <div>CANS UK Limited (Retail)</div>
                             <ul>
                                 <li>Through my professional experience, acquired the expertise to drive sales and revenue growth by developing and implementing effective sales strategies, training and motivating staff, and ensuring a positive customer experience.</li>
@@ -155,11 +195,15 @@
                                 <li>On my professional journey, gained valuable knowledge of efficient operations by optimizing inventory management, minimizing waste, reducing operational costs, and streamlining processes to increase profitability for businesses. This experience has equipped me with the skills necessary to contribute to a company's success through cost savings and increased profitability.</li>
                             </ul>
                         </div>
-                        <div class="cv-work-shadow">
+                        <div class="cv-work-shadow"> <!-- Shadow to seperate 2 experience -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the circle -->
                             <div class="cv-work-head">
                                 <span>Supervisor</span>
                                 <span>Nov 20<span class="cv-work-year">07</span> – Jul 20<span class="cv-work-year">08</span></span>
                             </div>
+
+                            <!-- Area combined of 2 rows which contains Name of the Employer and expertise -->
                             <div>Co-op Foods (Retail)</div>
                             <ul>
                                 <li>Being a Supervisor at Co-Operative Foods, achieve knowledge of effective inventory management, cash handling, stock control, maintain high level of customer satisfaction and welcoming store environment.</li>
@@ -167,11 +211,15 @@
                                 <li>Through my experience in the retail industry, acquired extensive knowledge and skills in the areas of merchandising, promotional strategies, and maintaining health and safety standards in the workplace.</li>
                             </ul>
                         </div>
-                        <div class="cv-work-shadow">
+                        <div class="cv-work-shadow"> <!-- Shadow to seperate 2 experience -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the circle -->
                             <div class="cv-work-head">
                                 <span>Administrator</span>
                                 <span>Feb 20<span class="cv-work-year">07</span> - Nov 20<span class="cv-work-year">07</span></span>
                             </div>
+
+                            <!-- Area combined of 2 rows which contains Name of the Employer and expertise -->
                             <div>Links Construction LTD (Construction)</div>
                             <ul>
                                 <li>As an Administration professional with experience in the construction industry, acquired a wealth of knowledge and expertise in effective project and financial management.</li>
@@ -179,11 +227,15 @@
                                 <li>Through my experience in the construction industry, learned how to identify opportunity for growth, development and explore new markets</li>
                             </ul>
                         </div>
-                        <div class="cv-work-shadow">
+                        <div class="cv-work-shadow"> <!-- Shadow to seperate 2 experience -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the circle -->
                             <div class="cv-work-head">
                                 <span>Night Auditor</span>
                                 <span>May 20<span class="cv-work-year">06</span> - Jan 20<span class="cv-work-year">07</span></span>
                             </div>
+
+                            <!-- Area combined of 2 rows which contains Name of the Employer and expertise -->
                             <div>Shaftesbury London Hyde Park Hotel (Hospitality)</div>
                             <ul>
                                 <li>Being a Night Auditor at Shaftesbury London Hyde Park, become experienced and responsible for accurate financial management coupled with exceptional customer service to all the guests.</li>
@@ -191,11 +243,15 @@
                                 <li>Through my experience in the hospitality industry, gained valuable knowledge and expertise in maintaining safety, security, and privacy for guests and employees. </li>
                             </ul>
                         </div>
-                        <div class="cv-work-shadow">
+                        <div class="cv-work-shadow"> <!-- Shadow to seperate 2 experience -->
+
+                            <!-- Column contains Month with 4 digit year where year is in the circle -->
                             <div class="cv-work-head">
                                 <span>Sales Assistant</span>
                                 <span>Aug 20<span class="cv-work-year">05</span> - Apr 20<span class="cv-work-year">06</span></span>
                             </div>
+
+                            <!-- Area combined of 2 rows which contains Name of the Employer and expertise -->
                             <div>Jay's Electrical Wholesaler (Wholesale)</div>
                             <ul>
                                 <li>At my first job with an Electrical Wholesaler in the UK, gained valuable experience in providing excellent customer service in the retail and service industry, establishing a strong foundation for my career growth and development.</li>
@@ -205,8 +261,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="cv-about-qualification">
-                    <div class="cv-qualification-header" onclick="toggleProject()">
+                <div class="cv-about-qualification"> <!-- A expandable card with all the project detail  -->
+                    <div class="cv-qualification-header" onclick="toggleProject()"> <!-- toggle expandale card function at 219 in cv-script.js -->
                         <div class="cv-qualification-title">Project</div>
                         <i class="fas fa-chevron-down cv-project-arrow"></i>
                     </div>
@@ -235,19 +291,29 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Skill circle bar heading -->
                 <div class="cv-skill-head">
                 Skill & Progress Meter
                 </div>
+
+                <!-- Skill circle bar area -->
                 <div class="cv-skill">
+
+                    <!-- Individual skill section -->
                 <div class="cv-skill-section">
                     <div class="cv-skill-content">
+                        <!-- Skill circle -->
                         <div class="cv-skill-percent" data-text="HTML" style="--num: 93">
+                            <!-- skill Dot -->
                             <div class="cv-skill-dot"></div>
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
                                 <circle cx="70" cy="70" r="70"></circle>
                             </svg>
                         </div>
+
+                        <!-- Skill percentage -->
                         <div class="cv-skill-number">
                             <div>93<span>%</span></div>
                         </div>
@@ -327,325 +393,36 @@
             </div>
         </div>
 
-        <!-- <div class="cv-about-overlay">
-            <div id="cvModal" class="cv-modal-about">
-                <div class="close-modal-about">X</div>
-                <div class="modal-spacing"></div>
-                <div class="cv-skill-head">
-                    <span>Skill & Progress Meter</span>
-                    <span>
-                        <a href="documents/CV_Hidayat.pdf" target="_blank" download>Resume in PDF <i class="fa-solid fa-file-arrow-down"></i></a>
-                    </span>
-                </div>
-                <div class="cv-skill">
-                    <div class="cv-skill-section">
-                        <div class="cv-skill-content">
-                            <div class="cv-skill-percent" data-text="HTML" style="--num: 93">
-                                <div class="cv-skill-dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                            </div>
-                            <div class="cv-skill-number">
-                                <div>93<span>%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-skill-section">
-                        <div class="cv-skill-content">
-                            <div class="cv-skill-percent" data-text="CSS" style="--num: 87">
-                                <div class="cv-skill-dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                            </div>
-                            <div class="cv-skill-number">
-                                <div>87<span>%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-skill-section">
-                        <div class="cv-skill-content">
-                            <div class="cv-skill-percent" data-text="JS" style="--num: 78">
-                                <div class="cv-skill-dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                            </div>
-                            <div class="cv-skill-number">
-                                <div>78<span>%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-skill-section">
-                        <div class="cv-skill-content">
-                            <div class="cv-skill-percent" data-text="Python" style="--num: 72">
-                                <div class="cv-skill-dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                            </div>
-                            <div class="cv-skill-number">
-                                <div>72<span>%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-skill-section">
-                        <div class="cv-skill-content">
-                            <div class="cv-skill-percent" data-text="DB" style="--num: 68">
-                                <div class="cv-skill-dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                            </div>
-                            <div class="cv-skill-number">
-                                <div>68<span>%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cv-skill-section">
-                        <div class="cv-skill-content">
-                            <div class="cv-skill-percent" data-text="Frame-W" style="--num: 88">
-                                <div class="cv-skill-dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                            </div>
-                            <div class="cv-skill-number">
-                                <div>88<span>%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cv-about-qualification">
-                    <div class="cv-qualification-header" onclick="toggleQualification()">
-                        <div class="cv-qualification-title">Qualification</div>
-                        <i class="fas fa-chevron-down cv-qualification-arrow"></i>
-                    </div>
-                    <div class="cv-qualification-content" style="display: none;">
-                        <div class="cv-course-shadow">
-                            <div class="cv-course-year">Nov</div>
-                            <div class="cv-course-century">
-                                20
-                                <span id="cvCODE" class="cv-or">
-                                    20
-                                </span>
-                            </div>
-                            <div class="cv-course-content">
-                                <div class="cv-course-head">
-                                    <span class="cv-institute-name">Code Institute</span>
-                                    <span>Diploma in Full Stack Web Development</span>
-                                </div>
-                                <div>Python Programming</div>
-                                <ul>
-                                    <li>I have learned range of technologies and tools, including HTML, CSS, JavaScript, Python, Flask, Django, MongoDB, and more</li>
-                                    <li>Have created 3 different projects through course using above tools and techniques</li>
-                                    <li>I have also acquired knowledge related to database, development, deployment</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cv-course-shadow">
-                            <div class="cv-course-year">Oct</div>
-                            <div class="cv-course-century">
-                                20
-                                <span id="cvNCC" class="cv-or">
-                                    06
-                                </span>
-                            </div>
-                            <div>
-                                <div class="cv-course-head">
-                                    <span class="cv-institute-name">NCC Education</span>
-                                    <span>PgD in Strategic Business & Information Technology</span>
-                                </div>
-                                <div>Business Strategy, Project Management, Information Systems Development & Data Analytics</div>
-                                <ul>
-                                    <li>Analyse and solve complex business problems by integrating information technology into business processes</li>
-                                    <li>Professional development and communication skills for leadership roles in business and technology organizations.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cv-course-shadow">
-                            <div class="cv-course-year">Sep</div>
-                            <div class="cv-course-century">
-                                20
-                                <span id="cvCDAC" class="cv-or">
-                                    03
-                                </span>
-                            </div>
-                            <div>
-                                <div class="cv-course-head">
-                                    <span class="cv-institute-name">Centre for Development of Advanced Computing</span>
-                                    <span>PgD in Computer Application</span>
-                                </div>
-                                <div>C, C++, ASP, Visual Basic 6, PL/SQL, Oracle 9i</div>
-                                <ul>
-                                    <li>During this course I have studied foundation in computer applications and programming with an emphasis on practical skills and hands-on experience.</li>
-                                    <li>This course also covered computer architecture, programming languages, database management as well as web development & software engineering</li>
-                                    <li>I have learned to design and develop software applications using a variety of programming languages and tools</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cv-course-shadow">
-                            <div class="cv-course-year">Apr</div>
-                            <div class="cv-course-century">
-                                20
-                                <span id="cvGU" class="cv-or">
-                                    02
-                                </span>
-                            </div>
-                            <div>
-                                <div class="cv-course-head">
-                                    
-                                    <span class="cv-institute-name">Gujarat University</span>
-                                    <span>Bachelor of Science in Chemistry</span>
-                                </div>
-                                <div>Inorganic, Organic, Physical, Analytical & Biochemistry</div>
-                                <ul>
-                                    <li>I have studied chemical reactions, chemical structures, chemical properties, chemical processes, and chemical analysis</li>
-                                    <li>I have also gained practical skills in laboratory techniques, chemical analysis, and instrumentation.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cv-about-experience">
-                    <div class="cv-experience-header" onclick="toggleExperience()">
-                        <div class="cv-experience-title">Experience</div>
-                        <i class="fas fa-chevron-down cv-experience-arrow"></i>
-                    </div>
-                    <div class="cv-experience-content" style="display: none;">
-                        <div class="cv-work-shadow">
-                            <div class="cv-work-head">
-                                <span>Self - Employee</span>
-                                <span>Jul 20<span class="cv-work-year">18</span> - Present</span>
-                            </div>
-                            <div>Miscellaneous (eCommerce)</div>
-                            <ul>
-                                <li>Through my experience, developed a keen understanding of how to optimize product listings and provide exceptional customer service, ultimately resulting in increased sales and revenue.</li>
-                                <li>Through my professional experience, developed a deep understanding of how to effectively engage with customers through their reviews, feedback, and ratings, enabling me to offer tailored services and personalized offers.</li>
-                                <li>Through my experience in online selling, gained valuable insights on how to make informed decisions about business strategy for growth and success by leveraging available data and analytics.</li>
-                            </ul>
-                        </div>
-                        <div class="cv-work-shadow">
-                            <div class="cv-work-head">
-                                <span>Manager</span>
-                                <span>Aug 20<span class="cv-work-year">08</span> – Jun 20<span class="cv-work-year">18</span></span>
-                            </div>
-                            <div>CANS UK Limited (Retail)</div>
-                            <ul>
-                                <li>Through my professional experience, acquired the expertise to drive sales and revenue growth by developing and implementing effective sales strategies, training and motivating staff, and ensuring a positive customer experience.</li>
-                                <li>As a customer service professional, successfully built a loyal customer base by promptly resolving complaints and cultivating a friendly and welcoming store environment.</li>
-                                <li>On my professional journey, gained valuable knowledge of efficient operations by optimizing inventory management, minimizing waste, reducing operational costs, and streamlining processes to increase profitability for businesses. This experience has equipped me with the skills necessary to contribute to a company's success through cost savings and increased profitability.</li>
-                            </ul>
-                        </div>
-                        <div class="cv-work-shadow">
-                            <div class="cv-work-head">
-                                <span>Supervisor</span>
-                                <span>Nov 20<span class="cv-work-year">07</span> – Jul 20<span class="cv-work-year">08</span></span>
-                            </div>
-                            <div>Co-op Foods (Retail)</div>
-                            <ul>
-                                <li>Being a Supervisor at Co-Operative Foods, achieve knowledge of effective inventory management, cash handling, stock control, maintain high level of customer satisfaction and welcoming store environment.</li>
-                                <li>Through my experience in leadership and management roles, developed the expertise to effectively manage teams by providing staff training, motivation, and support, ultimately contributing to the growth and success of the business.</li>
-                                <li>Through my experience in the retail industry, acquired extensive knowledge and skills in the areas of merchandising, promotional strategies, and maintaining health and safety standards in the workplace.</li>
-                            </ul>
-                        </div>
-                        <div class="cv-work-shadow">
-                            <div class="cv-work-head">
-                                <span>Administrator</span>
-                                <span>Feb 20<span class="cv-work-year">07</span> - Nov 20<span class="cv-work-year">07</span></span>
-                            </div>
-                            <div>Links Construction LTD (Construction)</div>
-                            <ul>
-                                <li>As an Administration professional with experience in the construction industry, acquired a wealth of knowledge and expertise in effective project and financial management.</li>
-                                <li>Through my professional experience, acquired extensive knowledge of maintaining compliance with regulations, effectively managing the workforce, and ensuring health and safety standards at various sites.</li>
-                                <li>Through my experience in the construction industry, learned how to identify opportunity for growth, development and explore new markets</li>
-                            </ul>
-                        </div>
-                        <div class="cv-work-shadow">
-                            <div class="cv-work-head">
-                                <span>Night Auditor</span>
-                                <span>May 20<span class="cv-work-year">06</span> - Jan 20<span class="cv-work-year">07</span></span>
-                            </div>
-                            <div>Shaftesbury London Hyde Park Hotel (Hospitality)</div>
-                            <ul>
-                                <li>Being a Night Auditor at Shaftesbury London Hyde Park, become experienced and responsible for accurate financial management coupled with exceptional customer service to all the guests.</li>
-                                <li>My expertise in hotel operations includes extensive knowledge of guest services, revenue optimization, and staff management, gained through years of experience in the industry.</li>
-                                <li>Through my experience in the hospitality industry, gained valuable knowledge and expertise in maintaining safety, security, and privacy for guests and employees. </li>
-                            </ul>
-                        </div>
-                        <div class="cv-work-head">
-                            <span>Sales Assistant</span>
-                            <span>Aug 20<span class="cv-work-year">05</span> - Apr 20<span class="cv-work-year">06</span></span>
-                        </div>
-                        <div>Jay's Electrical Wholesaler (Wholesale)</div>
-                        <ul>
-                            <li>At my first job with an Electrical Wholesaler in the UK, gained valuable experience in providing excellent customer service in the retail and service industry, establishing a strong foundation for my career growth and development.</li>
-                            <li>Working at Wholesaler was all about stock management which made me efficient in restocking effort and identifying slow moving products.</li>
-                            <li>Through my previous work experience, developed effective communication skills with suppliers, ensuring timely order placement and resolution of any issues that may arise.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="cv-about-qualification">
-                    <div class="cv-qualification-header" onclick="toggleProject()">
-                        <div class="cv-qualification-title">Project</div>
-                        <i class="fas fa-chevron-down cv-project-arrow"></i>
-                    </div>
-                    <div class="cv-project-content" style="display: none;">
-                        <div>Project reference will be provided per request</div>
-                        <div class="cv-project-shadow">
-                            <div class="cv-course-year">Nov</div>
-                            <div class="cv-course-century">
-                                20
-                                <span id="cvCODE" class="cv-or">
-                                    20
-                                </span>
-                            </div>
-                            <div class="cv-course-content">
-                                <div class="cv-course-head">
-                                    <span>Code Institute</span>
-                                    <span>Diploma in Full Stack Web Development</span>
-                                </div>
-                                <div>Project reference will be provided upon request</div>
-                                <ul>
-                                    <li>I have learned range of technologies and tools, including HTML, CSS, JavaScript, Python, Flask, Django, MongoDB, and more</li>
-                                    <li>Have created 3 different projects through course using above tools and techniques</li>
-                                    <li>I have also acquired knowledge related to database, development, deployment</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  -->
+        <!-- Contact modal -->
         <div class="cv-contact-overlay">
             <div class="cv-modal-contact">
                 <div class="close-modal-contact">X</div>
                 <div class="contact-display-area">
                     You can either drop me an email at 
                     <div class="contact-text">
+                        <!-- open prefilled email client function at 268 of cv-scripts.js -->
                         <a href="mailto:hidayat.mansuri@gmail.com" id="cvEmailCopy">hidayat.mansuri@gmail.com</a>
+                        <!-- email copy function at 244 of cv-scripts.js -->
                         <i class="fa-regular fa-copy" onclick="copyEmail()"></i>
                     </div> 
                     or call me on 
                     <div class="contact-text">
                         <span id="cvPhoneCopy">07854536271</span>
+                        <!-- email copy function at 256 of cv-scripts.js -->
                         <i class="fa-regular fa-copy" onclick="copyPhone()"></i>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Social link area -->
         <div class="cv-head-social">
             <a href="https://twitter.com/HidayatMansuri4" target="_blank"><i class="fa-brands fa-twitter social-icon"></i></a>
             <a href="https://github.com/hidayatmansuri" target="_blank"><i class="fa-brands fa-github social-icon"></i></a>
             <a href="https://www.linkedin.com/in/hidayat-mansuri-70003ab3" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
         </div>
+
+        <!-- Copy rights area -->
         <div class="cv-head-rights">
             Copyright &copy;
             <script>

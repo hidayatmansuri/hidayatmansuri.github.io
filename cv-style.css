@@ -549,7 +549,7 @@ span {
     display: none;
     padding: 0 1em;
     transition: transform 2s;
-    margin: 1em 3em 3em 3em;
+    /* margin: 1em 3em 3em 3em; */
 }
 
 .cv-course-year {
@@ -557,7 +557,7 @@ span {
     align-items: center;
 }
 
-.cv-or {
+.cv-invert-circle {
     height: 1.5em;
     width: 1.5em;
     border-radius: 50%;
@@ -690,7 +690,7 @@ span {
     display: none;
     padding: 0 1em;
     transition: transform 2s;
-    margin: 1em 3em 3em 3em;
+    /* margin: 1em 3em 3em 3em; */
 }
 
 .cv-project-shadow {
